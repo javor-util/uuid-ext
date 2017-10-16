@@ -1,0 +1,14 @@
+services:
+    # Contains the permissions of the CoreBundle for the API Endpoint (e.g. Devices, NFCCards, ...)
+    uuid-sign:
+        class: JavorUtil\UuidExt\UuidExtBundle\Service\UuidSign
+        public: false
+    uuid-ext:
+        alias: JavorUtil\UuidExt\UuidExtBundle\Service\UuidExt
+        public: true
+    JavorUtil\UuidExt\UuidExtBundle\Service\UuidExt:
+        arguments:
+            - '@uuid-sign'
+            - '@logger'
+            - '%node_id%'
+        public: false

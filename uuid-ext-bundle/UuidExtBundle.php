@@ -1,0 +1,1 @@
+<?php namespace JavorUtil\UuidExt\UuidExtBundle;use Symfony\Component\HttpKernel\Bundle\Bundle;use Symfony\Component\DependencyInjection\ContainerBuilder;class UuidExtBundle extends Bundle{public function build(ContainerBuilder $container){parent::build($container);}}

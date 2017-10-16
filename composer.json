@@ -1,0 +1,16 @@
+{
+    "name" : "javor-util/uuid-ext",
+    "description" : "",
+    "type" : "symfony-bundle",
+    "license": "All rights reserverd",
+    "autoload" : {
+        "psr-4" : {
+            "JavorUtil\\UuidExt\\UuidExtBundle\\": "uuid-ext-bundle/"
+        }
+    },
+    "extra" : {
+        "branch-alias" : {
+            "dev-master" : "0.4-dev"
+        }
+    }
+}
